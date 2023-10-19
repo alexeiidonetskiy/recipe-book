@@ -16,10 +16,10 @@ exports.getRecipes = async (req, res) => {
 
 exports.createRecipe = async (req, res) => {
   const { title, description } = req.body;
-
+  const createdBy = req.userId;
 
   try {
-    const savedRecipe = await RecipeService.saveRecipe(title, description);
+    const savedRecipe = await RecipeService.saveRecipe(title, description, createdBy);
     console.log('Recipe saved successfully.');
     res.status(201).json(savedRecipe);
   } catch (err) {

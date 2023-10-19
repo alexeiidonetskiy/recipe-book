@@ -1,38 +1,69 @@
-# create-svelte
+# essentials
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+## Project setup
 
-## Creating a project
+```
+# yarn
+yarn
 
-If you're seeing this, you've probably already done this step. Congrats!
+# npm
+npm install
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
+# pnpm
+pnpm install
 
-# create a new project in my-app
-npm create svelte@latest my-app
+# bun
+bun install
 ```
 
-## Developing
+### Compiles and hot-reloads for development
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```
+# yarn
+yarn dev
 
-```bash
+# npm
 npm run dev
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
+# pnpm
+pnpm dev
+
+# bun
+bun run dev
 ```
 
-## Building
+### Compiles and minifies for production
 
-To create a production version of your app:
+```
+# yarn
+yarn build
 
-```bash
+# npm
 npm run build
+
+# pnpm
+pnpm build
+
+# bun
+bun run build
 ```
 
-You can preview the production build with `npm run preview`.
+### Lints and fixes files
 
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+```
+# yarn
+yarn lint
+
+# npm
+npm run lint
+
+# pnpm
+pnpm lint
+
+# bun
+bun run lint
+```
+
+### Customize configuration
+
+See [Configuration Reference](https://vitejs.dev/config/).
