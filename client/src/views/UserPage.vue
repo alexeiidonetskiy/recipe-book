@@ -3,7 +3,7 @@
     <h1>User Page to create recipe</h1>
     
     <v-btn-toggle v-model="fillDefault" class="mb-4">
-      <v-btn :value="true">Fill whenith Lorem</v-btn>
+      <v-btn :value="true">Fill with Lorem</v-btn>
       <v-btn :value="false">Clear Values</v-btn>
     </v-btn-toggle>
     
@@ -42,7 +42,7 @@ export default {
 
     const createRecipe = async () => {
       // Prepare the data for the POST request
-      const data = {
+      const data = { 
         title: recipe.value.title,
         description: recipe.value.description,
       };
